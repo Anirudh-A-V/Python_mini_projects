@@ -8,8 +8,8 @@ app_window.resizable(1, 1)
 
 text_font = ("Boulder", 68, 'bold')
 
-background = "#f2e750"
-foreground = "#363529"
+background = "#1e36d4"
+foreground = "#fcfcfc"
 border_width = 25
 
 label = Label(app_window, font=text_font, bg=background, fg=foreground, bd=border_width)
