@@ -39,16 +39,16 @@ print(f"Wind : {response_curr.json()['wind']['speed']} km/hr, {response_curr.jso
 
 
 # print(res_forescast.text)
-i = 0
-if int(current_hour) + 3 > 12 and current_period != "PM":
-    current_period = "PM"
-elif int(current_hour) + 3 < 12 and current_period != "AM":
-    current_period = "AM"
+# i = 0
+# if int(current_hour) + 3 > 12 and current_period != "PM":
+#     current_period = "PM"
+# elif int(current_hour) + 3 < 12 and current_period != "AM":
+#     current_period = "AM"
 
-if int(current_hour) + 15 > 24 :
-    current_hour = int(current_hour) + 15 - 24
+# if int(current_hour) + 3 >= 24 :
+#     current_hour = int(current_hour) + 3 - 24
 
-print(f"3-Hour Weather Forecast (Time : {int(current_hour)+15}:{current_minute}:{current_seconds} {current_period} ) : ")
+print(f"3-Hour Weather Forecast : ")
 print(f"Weather Conditions : {res_forescast.json()['list'][0]['weather'][0]['main']}, {res_forescast.json()['list'][0]['weather'][0]['description']}")
 print(f"Temperature : {res_forescast.json()['list'][0]['main']['temp']}, min - {res_forescast.json()['list'][0]['main']['temp_min']}, max - {res_forescast.json()['list'][0]['main']['temp_max']}")
 print(f"Pressure : {res_forescast.json()['list'][0]['main']['pressure']} hPa")
