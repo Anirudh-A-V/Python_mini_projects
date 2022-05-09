@@ -1,9 +1,12 @@
-import requests, json
+import requests
+import json
 
-response = requests.get('http://api.open-notify.org/iss-now.json?callback=?')
+response = requests.get('http://api.open-notify.org/astros.json')
 
-print(response.status_code)
+# print(response.status_code)
 
-details = json.loads(response.text);
-print(details['iss_position']['latitude'])
-# details = json.dumps(response.json(), sort_keys=True, indent=4)
+print(f"\nNo. of people in the ISS : {response.json()['number']}")
+
+print(f"List of people in the ISS : ")
+for i in response.json()['people']:
+    print(i['name'])
