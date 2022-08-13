@@ -9,4 +9,4 @@ s = input("Enter the url : ").strip()
 url = pyqrcode.create(s) 
   
 # Create and save the png file naming "myqr.png" 
-url.png("QR_code.png", scale = 8) 
+url.png("Web_design.png", scale = 8) 
