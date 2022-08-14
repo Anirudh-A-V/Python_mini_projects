@@ -3,6 +3,8 @@ import pyautogui as gui
 speed = input("Speed: ")
 sleeptime = input("Sleeptime: ")
 
-gui.time.sleep(float(sleeptime))
+gui.time.sleep(3)
 
-gui.scroll(int(speed), int(sleeptime))
+while True:
+    gui.scroll(int(speed))
+    gui.time.sleep(int(sleeptime))
