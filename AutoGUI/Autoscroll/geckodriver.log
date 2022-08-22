@@ -1,0 +1,13 @@
+1661168234709	geckodriver	INFO	Listening on 127.0.0.1:55615
+1661168248897	geckodriver	INFO	Listening on 127.0.0.1:55640
+1661168251987	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55641" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\HP\\AppData\\Local\\Temp\\rust_mozprofile0HLNn0"
+1661168252577	Marionette	INFO	Marionette enabled
+1661168252584	Marionette	INFO	Listening on port 55658
+WebDriver BiDi listening on ws://localhost:55641
+Read port: 55658
+1661168252752	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\HP\\AppData\\Local\\Temp\\rust_mozprofile0HLNn0\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55641/devtools/browser/4d9f9815-e100-40ad-8a90-ce418cfe73cd
+1661168258733	Marionette	INFO	Stopped listening on port 55658
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 694: TypeError: this.tablesData[table] is undefined
+[Parent 19236, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
